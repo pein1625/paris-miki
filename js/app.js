@@ -534,6 +534,21 @@ $(function () {
 });
 
 $(function () {
+  addSwiper(".cat-slider", {
+    navigation: true,
+    spaceBetween: 30,
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      },
+      992: {
+        slidesPerView: 3
+      }
+    }
+  });
+});
+
+$(function () {
   $(".lang__toggle").on("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
