@@ -264,6 +264,12 @@ $(function () {
   $(".js-datepicker").datepicker();
 });
 
+$(function () {
+  $(".collection__toggle").on("click", function (e) {
+    $(this).siblings(".collection__dropdown").slideToggle("fast");
+  });
+});
+
 // menu toggle
 
 $(function () {
